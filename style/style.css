@@ -188,7 +188,7 @@ a svg:hover{
 }
 
 .main-line {
-    width: 495px;
+    width: 355px;
     height: 5px;
     background: #FF0000;
     border-radius: 10px;
@@ -245,6 +245,9 @@ a svg:hover{
     line-height: 55px;
     max-width: 382px;
     text-align: center;
+}
+.swiper-slide-active .box-about-me p{
+    animation: aboutMeTxt 2s ease-in-out;
 }
 
 .name-txt {
@@ -509,6 +512,9 @@ a svg:hover{
     box-shadow: 0 3px 4px rgb(255 0 0 / 73%), 0 0 30px rgb(255 0 0) inset;
     color: #ffffff;
 }
+.swiper-slide-active .project1 button{
+    animation: projectBtn 2s ease-in-out;
+}
 
 .txt-name-page {
     width: 100%;
@@ -555,9 +561,9 @@ a svg:hover{
 
 
 .red-line-contact-me {
-    width: 455px;
+    width: 355px;
     height: 8px;
-    background: #FF0000;
+    background: #A50C0C;
     border-radius: 10px;
     margin-left: 60px;
     margin-top: 30px;
@@ -592,7 +598,7 @@ a svg:hover{
     }
 
     100% {
-        width: 455px;
+        width: 355px;
     }
 }
 
@@ -657,6 +663,14 @@ a svg:hover{
         height: 330px;
     }
 }
+@keyframes projectBtn{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
 @keyframes contactMe{
     0%{
         margin-right: 200px;
@@ -671,5 +685,296 @@ a svg:hover{
     }
     100%{
         height: 60%;
+    }
+}
+@keyframes aboutMeTxt{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+
+
+
+
+
+
+@media screen and (max-width:1024px) {
+    .column-main img{
+        width: 380px;
+        margin-left: 13px;
+    }
+    .box-about-me p{
+        font-size: 31px;
+    }
+    @keyframes aboutMe{
+            0%{
+                width: 36%;
+                height: 70%;
+            }
+            100%{
+                width: 70%;
+                height: 100%;
+            }
+        }
+    }
+
+@media screen and (max-width:768px){
+    .main-line{
+        width: 335px;
+    }
+    @keyframes redLineHorisontal {
+        0% {
+            width: 50px;
+        }
+    
+        100% {
+            width: 335px;
+        }
+    }
+    .txt-main-first{
+        font-size: 46px;
+    }
+    .txt-main-second-white{
+        font-size: 46px;
+    }
+    .txt-main-second-red{
+        font-size: 46px;
+    }
+    .typed-cursor{
+        font-size: 40px;
+    }
+    .txt-main-first, .txt-main-second-white, .txt-main-second-red, .main-line, .txt-main-third{
+        margin-left: 30px;
+    }
+    .column-main img{
+        width: 380px;
+        margin-left: 0;
+    }
+    .social{
+        margin-right: 20px;
+    }
+    @keyframes social{
+        0%{
+            margin-bottom: 180px;
+            margin-right: 180px;
+        }
+        100%{
+            margin-bottom: 0;
+            margin-right: 20px;
+        }
+    }
+    .box-about-me{
+        width: 90%;
+    }
+    @keyframes aboutMe{
+        0%{
+            width: 36%;
+            height: 70%;
+        }
+        100%{
+            width: 90%;
+            height: 100%;
+        }
+    }
+    .skills-box{
+        width: 70%;
+    }
+    .skill-circle{
+        width: 70px;
+        height: 70px;
+    }
+    .skill-circle svg{
+        width: 45px;
+        height: 55px;
+    }
+    .progress-bar{
+        margin-left: 10px;
+    }
+    .red-line-contact-me{
+        width: 335px;
+    }
+}
+@media screen and (max-width: 550px) {
+    .social{
+        width: 40%;
+    }
+    .social a{
+        margin-left: 10px;
+    }
+    .title-home h1{
+        font-size: 50px;
+    }
+    .main{
+        flex-direction: column;
+    }
+    .column-main{
+        align-items: center;
+    }
+    .main-line{
+        display: none;
+    }
+    .column-main{
+        width: 100%;
+        height: 50%;
+    }
+    .txt-main-third br{
+        display: none;
+    }
+    .txt-main-first, .txt-main-second-white, .txt-main-second-red, .main-line, .txt-main-third{
+        margin-left: 5px;
+    }
+    .txt-main-first, .txt-main-second-white, .txt-main-second-red, .main-line{
+            font-size: 40px;
+        }
+    .column-main img{
+        width: 232px;
+    }
+    .prt-icon {
+        width: 65px;
+        height: 65px;
+    }
+    @keyframes headIcon{
+        0%{
+            width: 33px;
+            height: 33px;
+        }
+        100%{
+            width: 65px;
+            height: 65px;
+        }
+    }
+    .txt-logo-red, .txt-logo-white{
+        font-size: 25px;
+    }
+    .txt-logo-white{
+        margin-left: 40px;
+    }
+    .box-about-me p {
+        font-size: 26px;
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+    .red-line{
+        display: none;
+    }
+    @keyframes aboutMeTxt{
+        0%{
+            opacity: 0;
+            font-size: 10px;
+        }
+        100%{
+            opacity: 1;
+            font-size: 26px;
+        }
+    }
+    .swiper-slide-active .box-about-me p {
+        animation: aboutMeTxt 1.5s ease-in-out;
+    }
+    .skills-box{
+        width: 92%;
+    }
+    .skill-circle{
+        width: 92px !important;
+    }
+    .box-project {
+        width: 295px;
+        height: 275px;
+    }
+    @keyframes project{
+        0%{
+            width: 150px;
+            height: 80px;
+        }
+        100%{
+            width: 295px;
+            height: 275px;
+        }
+    }
+    .red-line-contact-me{
+        display: none;
+    }
+    .column-contact-me{
+        width: 100%;
+    }
+    .column-contact-me p{
+        padding-left: 10px;
+    }
+    .social-about-me{
+        padding-left: 0;
+    }
+    @keyframes contactMe{
+        0%{
+            margin-right: 150px;
+        }
+        100%{
+            margin-right: 0;
+        }
+    }
+}
+@media screen and (max-width:380px) {
+
+    .box-about-me{
+        height: 70%;
+    }
+    .box-about-me p{
+        font-size: 22px;
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+    @keyframes aboutMe{
+        0%{
+            width: 60%;
+            height: 50%;
+        }
+        100%{
+            width: 70%;
+            height: 70%;
+        }
+    }
+    @keyframes aboutMeTxt{
+        0%{
+            opacity: 0;
+            font-size: 22px;
+        }
+        100%{
+            opacity: 1;
+            font-size: 22px;
+        }
+    }
+    .swiper-slide-active .box-about-me p{
+        animation: none;
+    }
+    .swiper-slide-active .box-about-me{
+        animation: none;
+    }
+    @keyframes contactMe{
+        0%{
+            margin-right: 50px;
+        }
+        100%{
+            margin-right: 0;
+        }
+    }
+    @keyframes social{
+        0%{
+            margin-bottom: 180px;
+            margin-right: 20px;
+        }
+        100%{
+            margin-bottom: 0;
+            margin-right: 20px;
+        }
+    }
+}
+@media screen and (max-width:358px) {
+    .skill-circle {
+        width: 105px !important;
+    }
+    .txt-main-first, .txt-main-second-white, .txt-main-second-red, .main-line {
+        font-size: 34px;
     }
 }
